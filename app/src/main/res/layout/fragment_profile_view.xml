@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.profile.ProfileView"
+    android:background="?attr/color">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/container"
+                app:cardBackgroundColor="?attr/colorSecondary"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="15dp"
+                app:strokeColor="?android:attr/textColor"
+                app:strokeWidth="1dp"
+                app:cardCornerRadius="20dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="60dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/emailimage"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/baseline_email_24" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tooltipText="email"
+
+                            android:textSize="15sp"
+                            android:id="@+id/email"
+                            android:layout_marginStart="4dp"/>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/Name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="12dp"
+                        android:id="@+id/About"
+                        android:textAllCaps="false"
+                        android:textSize="15sp" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            >
+            <androidx.core.widget.ContentLoadingProgressBar
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/progres"
+                android:layout_toEndOf="@+id/cardimage"
+                android:layout_alignStart="@+id/cardimage"
+                android:visibility="gone"
+                style="@android:style/Widget.ProgressBar"/>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                app:strokeColor="?android:attr/textColor"
+                app:strokeWidth="1dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="50dp"
+                android:layout_gravity="center"
+                android:id="@+id/cardimage"
+                app:cardBackgroundColor="?attr/colorSecondary">
+
+
+                <ImageView
+
+
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/profilepicture"
+                    android:scaleType="centerCrop"/>
+            </com.google.android.material.card.MaterialCardView>
+
+        </RelativeLayout>
+    </FrameLayout>
+</ScrollView>

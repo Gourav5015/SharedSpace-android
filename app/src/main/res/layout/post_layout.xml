@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="?attr/cardBackgroundColor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:elevation="8dp"
+        android:padding="12dp"
+        app:cardCornerRadius="8dp"
+        android:id="@+id/card">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:id="@+id/title"
+                android:layout_weight="@integer/material_motion_duration_long_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="8dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+
+                android:paddingBottom="0dp"
+                android:textIsSelectable="true"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:tooltipText="Heading" />
+
+                <ImageView
+                    android:id="@+id/edit_icon"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_create_24"
+                    />
+
+                <ImageView
+                    android:id="@+id/delte_icon"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_delete_outline_24"
+                    />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="4dp"
+                    android:text="-by"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="8dp"
+                    android:textIsSelectable="true"
+                    android:textSize="12sp"
+                    android:textStyle="italic"
+                    android:tooltipText="author" />
+            <TextView
+                android:id="@+id/author"
+                android:text="gdg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="0dp"
+                android:paddingBottom="8dp"
+                android:textIsSelectable="true"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                android:tooltipText="auyhor" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <TextView
+                android:id="@+id/article"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+
+                android:textIsSelectable="true"
+                android:textSize="15sp"
+                android:tooltipText="content" />
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Posted on"
+                android:textIsSelectable="true"
+                android:textSize="8sp"
+                android:tooltipText="Datw" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:id="@+id/timestamp"
+                    android:textIsSelectable="true"
+                    android:textSize="8sp"
+                    android:tooltipText="Datw" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Sharedspace" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorAccent">@color/lightBlue</item>
+    </style>
+    <style name="ActionBar" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="android:title">"SharedSpace"</item>
+    </style>
+    <style name="Theme.Sharedspace" parent="Base.Theme.Sharedspace" >
+        <item name="color">@color/lightBlue</item>
+        <item name="colorSecondary">@color/white</item>
+        <item name="cardBackgroundColor">@color/white</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+</resources>

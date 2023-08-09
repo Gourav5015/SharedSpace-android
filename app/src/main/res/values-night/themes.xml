@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Sharedspace" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+
+        <item name="colorPrimaryDark">#030d1f</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="cardBackgroundColor">#0d1f3d</item>
+    </style>
+    <style name="Theme.Sharedspace" parent="Base.Theme.Sharedspace" >
+        <item name="android:colorPrimaryDark">#0d1f3d</item>
+        <item name="android:colorAccent">@color/black</item>
+        <item name="android:colorPrimary">@color/black</item>w
+<!--        <item name="colorPrimary">@color/white</item>-->
+<!--        <item name="cardBackgroundColor">#0d1f3d</item>-->
+        <item name="cardBackgroundColor">#02101f</item>
+<!--        <item name="android:textColorPrimary">@color/white</item>-->
+        <item name="android:textColor">#c9ced4</item>
+        <item name="color">#041729</item>
+        <item name="colorSecondary">#01080f</item>
+        <item name="android:colorBackground">#0b233b</item>
+    </style>
+</resources>

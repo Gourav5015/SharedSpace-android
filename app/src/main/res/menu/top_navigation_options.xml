@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/option_new_post"
+        android:icon="@drawable/baseline_create_24"
+        android:title="@string/option_new_post"
+        app:showAsAction="ifRoom"
+        />
+    <item android:title="@string/option_profile"
+        android:icon="@drawable/baseline_person_outline_24"
+        android:id="@+id/option_profile"
+        app:showAsAction="always"/>
+</menu>
